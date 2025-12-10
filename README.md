@@ -9,10 +9,10 @@ An intelligent carpooling system that matches multiple riders heading in similar
 [![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com/ishanaggarwal/ride-sharing-optimizer)
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
 [![React](https://img.shields.io/badge/react-18.2-61DAFB.svg?logo=react)](https://reactjs.org/)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](#-license)
 [![OR-Tools](https://img.shields.io/badge/OR--Tools-9.14-orange.svg)](https://developers.google.com/optimization)
 
-[Features](#-features) • [Quick Start](#-quick-start) • [Demo](#-screenshots) • [Documentation](#-documentation) • [API](#-api-endpoints)
+[Key Features](#-key-features) • [Quick Start](#-quick-start) • [Demo](#-screenshots) • [Documentation](#-documentation) • [API](#-api-reference)
 
 </div>
 
@@ -820,7 +820,7 @@ Comprehensive documentation is available:
 
 ## 📄 License
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License**.
 
 ```
 MIT License - Free to use, modify, and distribute
