@@ -222,11 +222,11 @@ sequenceDiagram
 
 Ensure you have the following installed:
 
-```bash
-✓ Python 3.8+          # Check with: python3 --version
-✓ Node.js 16+          # Check with: node --version
-✓ npm or yarn          # Check with: npm --version
-```
+| Requirement | Minimum Version | Check Command |
+|-------------|----------------|---------------|
+| Python | 3.8+ | `python3 --version` |
+| Node.js | 16+ | `node --version` |
+| npm | 6+ | `npm --version` |
 
 ### ⚡ Fastest Way to Start
 
