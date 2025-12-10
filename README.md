@@ -17,21 +17,89 @@ An intelligent ride-sharing system that efficiently matches multiple riders head
 - **📊 Live Metrics**: Real-time statistics on savings, costs, and environmental impact
 - **🌍 Environmental Impact**: Calculates CO₂ savings and efficiency improvements
 
+## 📸 Screenshots
+
+> *Placeholders for live application screenshots. Replace with actual images after running the project.*
+
+| Dashboard View | Optimization Results |
+|:---:|:---:|
+| ![Dashboard](https://via.placeholder.com/800x450?text=Interactive+Map+Dashboard) | ![Results](https://via.placeholder.com/800x450?text=Optimization+Results+Panel) |
+| *Real-time interactive map with riders and drivers* | *Detailed route optimization and cost savings* |
+
 ## 🏗️ Architecture
 
+The system follows a modern client-server architecture with a Flask backend for heavy optimization tasks and a React frontend for visualization.
+
+```mermaid
+graph TD
+    subgraph Frontend [React + Vite Frontend]
+        UI[User Interface]
+        Map[Leaflet Map]
+        State[State Management]
+        API_Client[Axios Client]
+    end
+
+    subgraph Backend [Flask Backend API]
+        Server[Flask Server]
+        Router[API Routes]
+        
+        subgraph Optimization_Engine [Optimization Engine]
+            KMeans[K-Means Clustering]
+            TSP[OR-Tools TSP Solver]
+            Dist[Distance Calculator]
+        end
+    end
+
+    UI --> State
+    Map --> State
+    State --> API_Client
+    API_Client -- JSON Request --> Server
+    Server --> Router
+    Router --> Optimization_Engine
+    KMeans --> TSP
+    Dist --> TSP
+    Optimization_Engine -- Optimized Routes --> Router
+    Router -- JSON Response --> API_Client
+```
+
 ### Backend (Python/Flask)
-- Route optimization using Google OR-Tools
-- K-means clustering for geographical grouping
-- Traveling Salesman Problem (TSP) solver for optimal routes
-- RESTful API with 4 endpoints
-- CORS enabled for cross-origin requests
+- **Route Optimization**: Google OR-Tools for solving VRP/TSP
+- **Clustering**: Scikit-learn K-means for grouping riders
+- **API**: RESTful endpoints serving JSON data
 
 ### Frontend (React/Vite)
-- Interactive map with Leaflet
-- Real-time ride matching visualization
-- Beautiful animations with Framer Motion
-- Responsive design with Tailwind CSS
-- Glass morphism UI effects
+- **Visualization**: Interactive Leaflet maps
+- **UI/UX**: Tailwind CSS & Framer Motion
+- **State**: React Hooks for real-time updates
+
+## 🔄 Task Flow
+
+The typical user journey from data generation to optimization results.
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant UI as Frontend UI
+    participant API as Backend API
+    participant Engine as Optimization Engine
+
+    User->>UI: Click "Generate Sample"
+    UI->>API: GET /api/generate-sample
+    API-->>UI: Return Random Riders/Drivers
+    UI->>User: Display Markers on Map
+
+    User->>UI: Click "Optimize Rides"
+    UI->>API: POST /api/optimize
+    Note over API,Engine: Process Request
+    
+    API->>Engine: Cluster Riders (K-Means)
+    Engine->>Engine: Assign Drivers
+    Engine->>Engine: Solve TSP Routes (OR-Tools)
+    Engine-->>API: Return Matches & Metrics
+    
+    API-->>UI: Return Optimization Result
+    UI->>User: Draw Routes & Show Stats
+```
 
 ## 🚀 Quick Start
 
