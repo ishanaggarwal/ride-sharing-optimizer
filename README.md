@@ -9,10 +9,10 @@ An intelligent carpooling system that matches multiple riders heading in similar
 [![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com/ishanaggarwal/ride-sharing-optimizer)
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
 [![React](https://img.shields.io/badge/react-18.2-61DAFB.svg?logo=react)](https://reactjs.org/)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](#-license)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](#license)
 [![OR-Tools](https://img.shields.io/badge/OR--Tools-9.14-orange.svg)](https://developers.google.com/optimization)
 
-[Key Features](#-key-features) • [Quick Start](#-quick-start) • [Demo](#-screenshots) • [Documentation](#-documentation) • [API](#-api-reference)
+[Key Features](#key-features) • [Quick Start](#quick-start) • [Screenshots](#screenshots) • [Documentation](#documentation) • [API Reference](#api-reference)
 
 </div>
 
