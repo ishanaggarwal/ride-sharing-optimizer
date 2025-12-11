@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚗 Ride-Sharing Optimizer
+# 🚗 Uber/Lyft Ride-Sharing Optimizer
 
 ### *Smart, Efficient, Sustainable Transportation*
 
