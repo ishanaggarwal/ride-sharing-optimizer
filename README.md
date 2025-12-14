@@ -2,6 +2,8 @@
 
 # 🚗 Uber/Lyft Ride-Sharing Optimizer
 
+### *By: Ishan Aggarwal*
+
 ### *Smart, Efficient, Sustainable Transportation*
 
 An intelligent carpooling system that matches multiple riders heading in similar directions, minimizing travel time and cost through advanced optimization algorithms and machine learning.
